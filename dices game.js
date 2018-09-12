@@ -1,26 +1,28 @@
-"set strict"
-var dice = {
-    sides: 6,
-    roll: function (stringe) {
-      var randomNumber = Math.floor(Math.random() * this.sides) + 1;
-      return randomNumber;
-    }
-  }
-  
-  
-  
-  //Prints dice roll to the page
-  
-  function printNumber(number) {
-    var placeholder = document.getElementById('placeholder');
-    placeholder.innerHTML = number;
-  }
-  
-  var button = document.getElementById('button');
-  let onclick;
-  button.onclick = function() {
-    var result = dice.roll();
-    printNumber(result);
-  };
-  
-  
+"use strict"
+
+function playGame() { // master function
+    let playerOneScore = 0;
+    let playerTwoScore = 0;
+
+    // Player 1's turn
+    let roll1 = rollDie(4);
+    let roll2 = rollDie(6);
+
+    console.log(roll1);
+
+    let total = Score(roll1, roll2)
+
+    console.log('total', total);
+}
+    
+function rollDie(dieSides) {
+    let roll = Math.floor(Math.random()*dieSides)+1;
+    return roll;
+}
+
+function Score(roll1,roll2,roll3,roll4,roll5,roll6){
+  let score = (roll1+roll2+roll3+roll4+roll5+roll6);
+  return score;
+ }
+ 
+playGame();

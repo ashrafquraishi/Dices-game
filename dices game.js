@@ -31,11 +31,30 @@ function roll() {
     let subScore = [roll1,roll2,roll3,roll4,roll5,roll6];
     let Player1Score = roll1+roll2+roll3+roll4+roll5+roll6;
     console.log ('Player 1 Score=', Player1Score)
-
+    
+    let isEven;
     if (Player1Score%2 === 0){
-        console.log( "Even score");
+      isEven = true;
     }
     else if (Player1Score%2 !== 0){
-    console.log ( "Odd score");
+      isEven = false
+    }
+    let userInput= prompt("player 2: Enter odd or even")
+
+    if(isEven){
+        if (userInput === "even"){
+            console.log ('your guess was right')
+        }
+        else{
+            //wrong
+        }
+    }
+    else{
+        if (userInput === "odd"){
+            console.log ('your guess was right')
+        }
+        else{
+            //wrong
+        }
     }
 }

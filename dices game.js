@@ -1,4 +1,6 @@
-"set strict"
+"use strict";
+
+playGame();
 
 function playGame() { // master function
     let playerOneScore = 0;
@@ -26,16 +28,14 @@ function roll() {
     console.log(roll6);
 
 
-let subScore = [roll1,roll2,roll3,roll4,roll5,roll6];
-let playerOneScore = roll1+roll2+roll3+roll4+roll5+roll6;
- 
+    let subScore = [roll1,roll2,roll3,roll4,roll5,roll6];
+    let Player1Score = roll1+roll2+roll3+roll4+roll5+roll6;
+    console.log ('Player 1 Score=', Player1Score)
 
-
-   console.log ('Player 1 =', playerOneScore)
+    if (Player1Score%2 === 0){
+        console.log( "Even score");
+    }
+    else if (Player1Score%2 !== 0){
+    console.log ( "Odd score");
+    }
 }
-
-   //odd and even coding
-  
-// let playerOnescore=
- 
-playGame();

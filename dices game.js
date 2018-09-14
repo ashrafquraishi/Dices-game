@@ -62,17 +62,17 @@ playGame();
         }
     }
  
-
+//player two coding
 
 }
  }
  playGame2(); 
     
  function playGame2() {
-    // Player 1's turn
-    let playerTwoScore = 0;
+    // Player 2's turn
+    let player2Score = 0;
     let rollArray = roll();
-    // console.log('total', total);
+    
  } 
 
 
@@ -94,14 +94,14 @@ playGame();
 
 
     let subScore = [roll1,roll2,roll3,roll4,roll5,roll6];
-    let Player1Score = roll1+roll2+roll3+roll4+roll5+roll6;
-    console.log ('Player 1 Score=', Player1Score)
+    let Player2Score = roll1+roll2+roll3+roll4+roll5+roll6;
+    console.log ('Player 2 Score=', Player2Score)
    
     let isEven;
-    if (Player1Score%2 === 0){
+    if (Player2Score%2 === 0){
      isEven = true;
     }
-    else if (Player1Score%2 !== 0){
+    else if (Player2Score%2 !== 0){
      isEven = false
      }
     let userInput= prompt("player 2: Enter odd or even")

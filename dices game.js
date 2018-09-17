@@ -90,31 +90,31 @@ playGame();
     console.log(roll3);
     console.log(roll4);
     console.log(roll5);
-    console.log(roll6);
+     console.log(roll6);
 
 
-    let subScore = [roll1,roll2,roll3,roll4,roll5,roll6];
-    let Player2Score = roll1+roll2+roll3+roll4+roll5+roll6;
-    console.log ('Player 2 Score=', Player2Score)
+     let subScore = [roll1,roll2,roll3,roll4,roll5,roll6];
+     let Player2Score = roll1+roll2+roll3+roll4+roll5+roll6;
+     console.log ('Player 2 Score=', Player2Score)
    
-    let isEven;
-    if (Player2Score%2 === 0){
+     let isEven;
+     if (Player2Score%2 === 0){
      isEven = true;
-    }
-    else if (Player2Score%2 !== 0){
+     }
+     else if (Player2Score%2 !== 0){
      isEven = false
      }
-    let userInput= prompt("player 2: Enter odd or even")
+     let userInput= prompt("player 2: Enter odd or even")
 
-    if(isEven==="even"){
+      if(isEven==="even"){
        if (userInput === "even"){
            console.log ('your guess was right')
        }
        else{
            console.log ("your guess was wrong")
        }
-    }
-    else{
+     }
+     else{
        if (userInput === "odd"){
            console.log ('your guess was right')
        }
